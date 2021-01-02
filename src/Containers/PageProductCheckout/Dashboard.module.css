@@ -1,0 +1,145 @@
+h2 {
+  margin: 0px;
+  font-weight: 100;
+  font-size: 23px;
+  color: rgb(25, 25, 26);
+}
+
+h3 {
+  margin: 0px;
+  font-weight: 100;
+  font-size: 18px;
+  color: rgb(16, 81, 119);
+}
+
+p {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 100;
+}
+.Container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  margin: 50px auto;
+}
+.checkoutContainer {
+  display: flex;
+  width: 90%;
+  margin: 0px auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.checkoutCartContainer {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+.cartWrapper {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 0px 10px #d6d4d4;
+}
+.userDetails {
+  width: 80%;
+  display: flex;
+  padding: 10px;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 0px 10px #d6d4d4;
+}
+
+.userDetails > div {
+  width: 90%;
+}
+.cartWrapper img {
+  width: 70px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.cartDetailWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.checkoutUserDetailsWrapper {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+.userDetailsFiled {
+  margin-bottom: 1rem;
+}
+
+.quantityBtn {
+  background-color: #d6d4d4;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.placeOrderBtn {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  background-color: #d6d4d4;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+}
+.quantityBtn:hover,
+.placeOrderBtn:hover {
+  background-color: #8437db;
+}
+
+.SucessMessageWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.SucessMessageWrapper > img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
+  .Container {
+    flex-direction: column;
+  }
+
+  .checkoutCartContainer,
+  .checkoutUserDetailsWrapper {
+    width: 100%;
+  }
+}
